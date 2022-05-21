@@ -1,0 +1,10 @@
+{
+    "antlr4.generation": {
+        "antlr4.generation": {
+            "mode": "none",
+            "language": "TypeScript",
+            "listeners": true,
+            "visitors": false
+        }
+    }
+}

@@ -1,13 +1,13 @@
 grammar TodoLangGrammar;
 
-todoExpressions : (addExpression)* (completeExpression)*;
+todoExpressions: (addExpression)* (completeExpression)*;
 
-addExpression : ADD TODO STRING;
-completeExpression : COMPLETE TODO STRING;
+addExpression: ADD TODO STRING;
+completeExpression: COMPLETE TODO STRING;
 
-ADD : 'ADD';
-TODO : 'TODO';
+ADD: 'ADD';
+TODO: 'TODO';
 COMPLETE: 'COMPLETE';
 STRING: '"' ~ ["]* '"';
-EOL: [\r\n] + -> skip;
+EOL: [\r\n]+ -> skip;
 WS: [ \t] -> skip;
